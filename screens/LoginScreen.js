@@ -168,7 +168,8 @@ export default class LoginScreen extends Component {
               style={styles.formTextInput}
               placeholder={"Country Curreny Code"}
               placeholderTextColor="black"
-              maxLength={8}
+              autoCapitalize="characters"
+              maxLength={3}
               onChangeText={(text) => {
                 this.setState({
                   currencyCode: text,

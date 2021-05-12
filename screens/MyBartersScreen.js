@@ -156,7 +156,7 @@ export default class MyBartersScreen extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    width: 90,
+    width: 190,
     height: 25,
     justifyContent: "center",
     alignItems: "center",
