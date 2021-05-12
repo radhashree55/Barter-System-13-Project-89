@@ -99,7 +99,7 @@ export default class MyBartersScreen extends Component {
   keyExtractor = (item, index) => index.toString();
 
   renderItem = ({ item, i }) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => {}}>
       <ListItem key={i} bottomDivider>
         <Icon
           name="shopping-cart"

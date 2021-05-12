@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { DrawerItems } from "react-navigation-drawer";
 import { Avatar } from "react-native-elements";
 import { Icon } from "react-native-elements";
@@ -101,6 +101,7 @@ export default class CustomSideBarMenu extends Component {
             size={"xlarge"}
             onPress={() => this.selectPicture()}
             showEditButton
+            title="Add a profile picture"
           />
 
           <Text

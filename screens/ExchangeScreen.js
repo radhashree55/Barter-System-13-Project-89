@@ -167,12 +167,14 @@ export default class ExchangeScreen extends Component {
     this.getIsItemRequestActive();
     this.getData();
   }
-  
+
   updateItemRequestStatus = () => {
     db.collection("items_for_exchange").doc(this.state.docId).update({
       item_status: "received",
     });
-  
+
+    db.collection("items_for_exchange").doc(this.state.docId).delete();
+
     db.collection("users")
       .where("Email_ID", "==", this.state.userName)
       .get()

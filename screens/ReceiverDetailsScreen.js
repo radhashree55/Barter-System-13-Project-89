@@ -93,7 +93,7 @@ export default class ReceiverDetailsScreen extends Component {
 
   render() {
     return (
-      <View style={{flex:1}}>
+      <View style={{ flex: 1 }}>
         <View style={{ flex: 0.1 }}>
           <Header
             leftComponent={
